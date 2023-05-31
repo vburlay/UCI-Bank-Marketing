@@ -5,6 +5,7 @@ import seaborn as sns
 from sklearn.linear_model import LogisticRegression
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.tree import DecisionTreeClassifier
+from sklearn.ensemble import RandomForestClassifier
 from sklearn.svm import SVC
 from xgboost import XGBClassifier
 from sklearn import preprocessing
@@ -14,13 +15,9 @@ from sklearn.model_selection import  cross_val_score
 from sklearn.metrics import classification_report, confusion_matrix
 
 def probability(x_testcnn,y_test,model):
-    if x_testcnn.ndim == 3:
-        probs = model.predict(x_testcnn)
-    else:
-        probs = model.predict_proba(x_testcnn)     
-    
+    probs = model.predict(x_testcnn)
     y_pred_df = pd.DataFrame(probs)
-    y_pred_1 = y_pred_df.iloc[:, [1]]
+    y_pred_1 = y_pred_df.iloc[:, 1]
     y_test_df = pd.DataFrame(y_test)
 # Put the index as ID column, remove index from both dataframes and combine them
     y_test_df["ID"] = y_test_df.index
