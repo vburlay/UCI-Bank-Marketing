@@ -1,7 +1,8 @@
 # **Bank Marketing** 
 
 ![image](https://github.com/vburlay/uci-bank-marketing/raw/master/images/dataset-cover.png)
-> A study of the customer database for the purpose of finding and analyzing the potential customers
+> A study of the customer database for the purpose of finding and analyzing the potential customers.
+> Live demo [_here_](https://vburlay-uci-bank-marketing-streamlit-demo-sbf8b9.streamlit.app/).
 
 ## Table of Contents
 * [Genelal Info](#general-nformation)
@@ -45,7 +46,7 @@
 
 * **CNN (Architecture)**
 
-![image2](https://github.com/vburlay/anw_feld_ba/raw/main/images/model.PNG ) 
+![image2](https://github.com/vburlay/uci-bank-marketing/raw/master/images/cnn.PNG) 
 
 * **CNN (Evaluation)**
 ![image3](https://github.com/vburlay/uci-bank-marketing/raw/master/images/loss_acc.PNG) 
